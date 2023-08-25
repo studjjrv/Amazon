@@ -1,0 +1,560 @@
+.contenedor-header 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    height: 70px
+    background-color: #131921
+
+#style-strong
+    font-size: 15px
+    color: white
+.style-p1
+    color: white
+    font-size: 12px
+
+.style-p1-1
+    color: gray 
+    font-size: 12px
+ 
+.contenedor-logo
+    cursor: pointer
+    #img-logo
+        width: 110px
+        height: 40px
+        margin: 10px 10px 0px
+        padding: 2px 2px
+
+.contenedor-logo
+    &:hover
+        border: 1px solid white
+        border-radius: 8%
+        height: 50px 
+
+.contenedor-localizacion
+    @extend .contenedor-logo
+
+.contenedor-idioma
+    @extend .contenedor-logo
+
+.contenedor-identificador
+    @extend .contenedor-logo
+
+.contenedor-devoluciones
+    @extend .contenedor-logo
+
+.contenedor-carrito
+    @extend .contenedor-logo
+
+.contenedor-localizacion
+    display: flex
+    gap:5px
+    justify-content: center
+    align-items: center
+    padding: 5px 5px
+    margin-right: 20px
+    cursor: pointer
+    #img-localizador
+        width: 15px
+        height: 15px
+
+.contenedor-buscador
+    display: flex
+    justify-content: center
+    align-items: center
+    #todos
+        background-color: #D4D4D4
+        color: gray
+        font-size: 12px
+        padding: 0px 8px
+        border-top-left-radius: 10%
+        border-bottom-left-radius: 10%
+        width: 70px
+        height: 40px
+        border: 0
+        &:hover
+            color: black
+            background-color: #a7a7a7
+
+        option
+            background-color: white
+            font-size: 16px        
+
+    #buscador
+        width: 500px
+        height: 40px
+        border:0
+        outline:0
+        padding: 5px
+    #lupa
+        background-color: #F3A847
+        width: 45px
+        height: 40px
+        padding: 8px 9px
+        border-top-right-radius: 10%
+        border-bottom-right-radius: 10%
+
+.contenedor-idioma
+    display: flex
+    gap:5px
+    justify-content: center
+    align-items: center
+    padding: 10px 5px
+    cursor: pointer
+    #bandera
+        width: 20px
+        height: 15px
+    p    
+        color: white 
+        font-size: 15px
+     
+.contenedor-identificador
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0px 10px
+    cursor: pointer
+
+.contenedor-devoluciones
+    @extend .contenedor-identificador
+
+.contenedor-carrito
+    @extend .contenedor-idioma
+    margin: 0px 10px 0px 0px
+    #carrito
+        width: 30px
+        height: 30px
+    p    
+        color: white
+        margin-top: 15px
+        font-size: 15px
+  
+/*ESTILOS DEL NAVEGADOR*/
+nav
+    height: 40px
+    background-color: #232F3E
+
+nav ul   
+    display: flex
+    align-items: center
+    gap: 20px
+    color: white
+    font-size: 12px    
+    li label
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 8px 10px
+        cursor: pointer
+    img
+        width: 20px
+        height: 20px
+
+.contenedor-nav-ul
+    li
+        &:hover
+            border: 1px solid white
+            height: 40px
+            padding: 12px 2px
+
+        
+/*ESTILO DEL ASIDE*/
+#img-usuario
+    width: 25px
+    height: 25px
+
+.contenedor-nav-menu-lateral
+    display: flex
+    align-items: center
+    height: 50px
+    color: white
+    font-size: 20px
+    img
+        margin: 0px 10px 0px 36px
+
+.estilo-x
+    position: fixed
+    background-color: rgba(0,0,0,0.8) 
+    top:0
+    left: 360px
+    font-size: 40px
+    padding: 10px 10px
+    color: white
+    cursor: pointer
+    line-height: 40px
+    height: 100vh
+    width: 100%
+
+#btn-menu-lateral
+    display: none
+
+.aside-menu-lateral
+    display: flex
+    flex-direction: column
+    position: absolute
+    z-index: 10
+    top:0
+    left:0
+    visibility: hidden
+    ul
+        display: block
+        position: static
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        overflow: scroll
+        line-height: 40px
+        background-color: white
+        width: 360px
+        height: 93vh
+        li
+            margin-left: 40px
+   
+.titulo-li
+    font-size: 16px
+    font-weight: bold
+
+.titulo-li-2
+    font-size: 12px
+
+#btn-menu-lateral:checked ~ .aside-menu-lateral
+    visibility: visible
+
+.linea 
+  border-top: 1px solid #d5dbdb
+  padding: 0
+  margin: 5px 0px
+  height: 2px
+  max-width: 360px
+
+        
+/*ESTILOS DEL SECTION*/
+/*IMAGEN DE FONDO, GRIS, PRODUCTOS*/
+.contenedor-section
+    position: relative
+    
+#img-fondo
+    position: absolute
+    width: 100%
+    z-index: -1
+    
+.img-fondo-gris
+    position: absolute
+    height: 290vh
+    width: 100%
+    z-index: -1
+    background: linear-gradient(190deg, rgba(186,186,186,0.7485119047619048) 0%, #E3E6E6 100%)
+    top: 450px
+
+.imagenes-productos
+    position: relative
+    top: 200px
+    margin: 0px 10px
+    overflow: hidden
+    ul
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr))  
+        grid-gap: 10px
+    .imaganes-productos-li
+        border-top: 10px solid white
+        border-bottom: 60px solid white
+        border-left: 20px solid white
+        border-right: 20px solid white        
+        width: 300px
+        height: 380px
+        object-fit: cover
+
+    .imaganes-productos-cuadricula
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(110px,1fr))
+        background-color: white
+        justify-content: center
+        width: 300px
+        height: 380px     
+        img
+            width: 100px
+            height: 100px
+            margin: 0px 20px
+        p
+            font-size: 12px
+            text-align: left
+            width: 300px
+            height: 20px
+            margin-top: -10px
+            margin-left: 30px
+
+.titulo-imagenes
+    display: flex
+    background-color: white
+    width: 300px
+    height: 65px
+    text-align: left
+    padding: 10px 15px 40px 15px
+    font-size: 21px
+
+.enlace-productos
+    margin-left: 30px
+    color: #007185
+    font-size: 12px
+    position: relative
+    top: -40px  
+
+.enlace-productos-cuadricula
+    @extend .enlace-productos
+    top: 13px
+
+.enlace-productos
+    &:hover
+        color: #CE6539
+
+.enlace-productos-cuadricula
+    @extend .enlace-productos
+
+
+/*SECTION IDENTIFICATE
+.contenedor-section-identificate
+    position: relative
+    margin-top: 250px
+    background-color: white
+ 
+
+.identificate
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center 
+    width: 100%
+    height: 150px
+    gap: 5px
+    position: relative
+
+
+#btn-identificate
+    background-color: #FFCD50
+    width: 210px
+    height: 30px
+    border-radius: 10px
+    border: 0
+    text-shadow: 0 1px 0 rgb(255, 224, 147)
+    cursor: pointer
+
+#parrafo-identificate
+    font-size: 13px
+
+#parrafo-identificate2
+    font-size: 11px
+
+#enlace-registro
+    color: #007185
+    &:hover
+        color: #CE6539
+
+.recta
+    border-bottom: 1px solid #d5dbdb
+    margin-top: 30px
+    max-width: 100%
+
+
+.recta2
+    border-top: 1px solid #d5dbdb
+    margin-bottom: 30px
+    max-width: 100%
+
+.inicio-pagina
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #485769
+    height: 50px
+
+#estilo-inicio-pagina
+    color: white
+    font-size: 13px
+
+
+.inicio-pagina
+    &:hover
+        background-color: #5c7089
+
+/*FOOTER 1*/
+
+.footer1
+    display: flex
+    justify-content: space-around
+    background-color: #232F3E
+    .contenedor-titulos
+        height: 300px
+        margin: 30px 0px
+        color:  white
+        ul
+            font-size: 12px
+            line-height: 30px
+            text-overflow: clip
+.footer-titulo
+    color:  white
+    font-weight: bold
+    font-size: 16px
+
+/*FOOTER 2*/
+
+.footer2
+    display: flex
+    gap: 80px
+    justify-content: center
+    align-items: center
+    background-color: #232F3E
+    border-top: 1px solid #d5dbdb
+    height: 100px
+    #footer-logo
+        margin-top: 15px
+        width: 76px
+        height: 23px
+    #footer-bandera
+        width: 20px
+        height: 10px
+
+.footer-div-derecha
+    display: flex
+    gap: 20px
+    p
+        border: 1px solid #d5dbdb
+        padding: 6px 10px
+        height: 30px
+        color: white
+        border-radius: 2px
+        cursor: pointer
+        font-size: 12px 
+.tooltiptext
+    display: flex
+    flex-direction: column
+    visibility: hidden
+    width: 280px
+    height: 300px
+    background-color: white
+    position: absolute
+    z-index: 1
+    margin-top: 40px
+    margin-left: 20px
+    border-radius: 10px
+    box-shadow: 1px 0px 33px 16px rgba(0,0,0,0.51)
+    div
+        display: flex
+        justify-content: space-around
+        margin-top: 15px
+        margin-bottom: 10px
+    label
+        padding: 4px 10px
+        font-size: 12px
+        margin: 0px 10px
+        input
+            margin: 0px 10px            
+    h1
+        font-size: 14px
+    a
+        font-size: 12px
+
+.recta4
+    border-bottom: 1px solid #d5dbdb
+    width: 200px
+    margin: 0px 50px
+
+#footer-idioma
+    &:hover
+        ~ .tooltiptext
+            visibility: visible
+
+/*FOOTER 3*/
+
+.footer3
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    background-color: #131A22
+    .contenedor-titulos-footer3
+        height: 400px
+        margin: 30px 0px
+        padding: 0px 100px
+        tr
+            line-height: 15px
+            td
+                padding: 0px 10px
+                margin: 0px 50px
+                a
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-start
+                    font-size: 12px
+                    color: white
+                    &:hover
+                        text-decoration: underline
+                    span
+                        font-size: 12px
+                        color: gray
+    .contendor-final
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 10px 0px 30px
+        ul
+            display: flex
+            justify-content: space-around
+            li
+                padding: 5px 9px
+                img
+                    width: 30px
+                    height: 30px
+                    margin-top: -5px
+                a
+                    color: white
+                    font-size: 12px
+        span
+            color: white
+            font-size: 12px    
+        
+
+  
+
+
+
+    
+
+
+
+/*SECCIÓN DE CAMBIO DE FONDOS DE PANTALLA*/
+#img-fondo2
+    visibility: hidden
+    position: absolute
+    width: 100%
+    z-index: -1
+
+#btn-flecha
+   display: none
+
+
+#flecha-derecha
+    position: absolute
+    z-index: 3
+    width: 60px
+    height: 60px
+    margin-top: 80px
+    margin-left: 1180px
+    cursor: pointer
+
+#flecha-izquierda
+    position: absolute
+    z-index: 3
+    width: 60px
+    height: 60px
+    margin-top: 80px
+    transform: rotate(180deg)
+    cursor: pointer
+
+    
+#btn-flecha
+    &:checked ~ .contenedor-flechas
+        #img-fondo
+            visibility: hidden
+        #img-fondo2
+            visibility: visible
+
