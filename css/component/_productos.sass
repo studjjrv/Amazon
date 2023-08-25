@@ -1,0 +1,79 @@
+.contenedor-section
+    position: relative
+    
+#img-fondo
+    position: absolute
+    width: 100%
+    z-index: -1
+    
+.img-fondo-gris
+    position: absolute
+    height: 290vh
+    width: 100%
+    z-index: -1
+    background: linear-gradient(190deg, rgba(186,186,186,0.7485119047619048) 0%, #E3E6E6 100%)
+    top: 450px
+
+.imagenes-productos
+    position: relative
+    top: 200px
+    margin: 0px 10px
+    overflow: hidden
+    ul
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr))  
+        grid-gap: 10px
+    .imaganes-productos-li
+        border-top: 10px solid white
+        border-bottom: 60px solid white
+        border-left: 20px solid white
+        border-right: 20px solid white        
+        width: 300px
+        height: 380px
+        object-fit: cover
+
+    .imaganes-productos-cuadricula
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(110px,1fr))
+        background-color: white
+        justify-content: center
+        width: 300px
+        height: 380px     
+        img
+            width: 100px
+            height: 100px
+            margin: 0px 20px
+        p
+            font-size: 12px
+            text-align: left
+            width: 300px
+            height: 20px
+            margin-top: -10px
+            margin-left: 30px
+
+.titulo-imagenes
+    display: flex
+    background-color: white
+    width: 300px
+    height: 65px
+    text-align: left
+    padding: 10px 15px 40px 15px
+    font-size: 21px
+
+.enlace-productos
+    margin-left: 30px
+    color: #007185
+    font-size: 12px
+    position: relative
+    top: -40px  
+
+.enlace-productos-cuadricula
+    @extend .enlace-productos
+    top: 13px
+
+.enlace-productos
+    &:hover
+        color: #CE6539
+
+.enlace-productos-cuadricula
+    @extend .enlace-productos

@@ -1,0 +1,130 @@
+.contenedor-header 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    height: 70px
+    background-color: #131921
+
+#style-strong
+    font-size: 15px
+    color: white
+.style-p1
+    color: white
+    font-size: 12px
+
+.style-p1-1
+    color: gray 
+    font-size: 12px
+ 
+.contenedor-logo
+    cursor: pointer
+    #img-logo
+        width: 110px
+        height: 40px
+        margin: 10px 10px 0px
+        padding: 2px 2px
+
+.contenedor-logo
+    &:hover
+        border: 1px solid white
+        border-radius: 8%
+        height: 50px 
+
+.contenedor-localizacion
+    @extend .contenedor-logo
+
+.contenedor-idioma
+    @extend .contenedor-logo
+
+.contenedor-identificador
+    @extend .contenedor-logo
+
+.contenedor-devoluciones
+    @extend .contenedor-logo
+
+.contenedor-carrito
+    @extend .contenedor-logo
+
+.contenedor-localizacion
+    display: flex
+    gap:5px
+    justify-content: center
+    align-items: center
+    padding: 5px 5px
+    margin-right: 20px
+    cursor: pointer
+    #img-localizador
+        width: 15px
+        height: 15px
+
+.contenedor-buscador
+    display: flex
+    justify-content: center
+    align-items: center
+    #todos
+        background-color: #D4D4D4
+        color: gray
+        font-size: 12px
+        padding: 0px 8px
+        border-top-left-radius: 10%
+        border-bottom-left-radius: 10%
+        width: 70px
+        height: 40px
+        border: 0
+        &:hover
+            color: black
+            background-color: #a7a7a7
+
+        option
+            background-color: white
+            font-size: 16px        
+
+    #buscador
+        width: 500px
+        height: 40px
+        border:0
+        outline:0
+        padding: 5px
+    #lupa
+        background-color: #F3A847
+        width: 45px
+        height: 40px
+        padding: 8px 9px
+        border-top-right-radius: 10%
+        border-bottom-right-radius: 10%
+
+.contenedor-idioma
+    display: flex
+    gap:5px
+    justify-content: center
+    align-items: center
+    padding: 10px 5px
+    cursor: pointer
+    #bandera
+        width: 20px
+        height: 15px
+    p    
+        color: white 
+        font-size: 15px
+     
+.contenedor-identificador
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0px 10px
+    cursor: pointer
+
+.contenedor-devoluciones
+    @extend .contenedor-identificador
+
+.contenedor-carrito
+    @extend .contenedor-idioma
+    margin: 0px 10px 0px 0px
+    #carrito
+        width: 30px
+        height: 30px
+    p    
+        color: white
+        margin-top: 15px
+        font-size: 15px

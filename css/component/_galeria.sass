@@ -1,0 +1,34 @@
+#img-fondo2
+    visibility: hidden
+    position: absolute
+    width: 100%
+    z-index: -1
+
+#btn-flecha
+   display: none
+
+#flecha-derecha
+    position: absolute
+    z-index: 3
+    width: 60px
+    height: 60px
+    margin-top: 80px
+    margin-left: 1180px
+    cursor: pointer
+
+#flecha-izquierda
+    position: absolute
+    z-index: 3
+    width: 60px
+    height: 60px
+    margin-top: 80px
+    transform: rotate(180deg)
+    cursor: pointer
+  
+#btn-flecha
+    &:checked ~ .contenedor-flechas
+        #img-fondo
+            visibility: hidden
+        #img-fondo2
+            visibility: visible
+

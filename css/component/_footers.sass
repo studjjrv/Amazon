@@ -1,0 +1,134 @@
+/*FOOTER 1*/
+.footer1
+    display: flex
+    justify-content: space-around
+    background-color: #232F3E
+    .contenedor-titulos
+        height: 300px
+        margin: 30px 0px
+        color:  white
+        ul
+            font-size: 12px
+            line-height: 30px
+            text-overflow: clip
+.footer-titulo
+    color:  white
+    font-weight: bold
+    font-size: 16px
+
+/*FOOTER 2*/
+
+.footer2
+    display: flex
+    gap: 80px
+    justify-content: center
+    align-items: center
+    background-color: #232F3E
+    border-top: 1px solid #d5dbdb
+    height: 100px
+    #footer-logo
+        margin-top: 15px
+        width: 76px
+        height: 23px
+    #footer-bandera
+        width: 20px
+        height: 10px
+
+.footer-div-derecha
+    display: flex
+    gap: 20px
+    p
+        border: 1px solid #d5dbdb
+        padding: 6px 10px
+        height: 30px
+        color: white
+        border-radius: 2px
+        cursor: pointer
+        font-size: 12px 
+.tooltiptext
+    display: flex
+    flex-direction: column
+    visibility: hidden
+    width: 280px
+    height: 300px
+    background-color: white
+    position: absolute
+    z-index: 1
+    margin-top: 40px
+    margin-left: 20px
+    border-radius: 10px
+    box-shadow: 1px 0px 33px 16px rgba(0,0,0,0.51)
+    div
+        display: flex
+        justify-content: space-around
+        margin-top: 15px
+        margin-bottom: 10px
+    label
+        padding: 4px 10px
+        font-size: 12px
+        margin: 0px 10px
+        input
+            margin: 0px 10px            
+    h1
+        font-size: 14px
+    a
+        font-size: 12px
+
+.recta4
+    border-bottom: 1px solid #d5dbdb
+    width: 200px
+    margin: 0px 50px
+
+#footer-idioma
+    &:hover
+        ~ .tooltiptext
+            visibility: visible
+
+/*FOOTER 3*/
+
+.footer3
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    background-color: #131A22
+    .contenedor-titulos-footer3
+        height: 400px
+        margin: 30px 0px
+        padding: 0px 100px
+        tr
+            line-height: 15px
+            td
+                padding: 0px 10px
+                margin: 0px 50px
+                a
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-start
+                    font-size: 12px
+                    color: white
+                    &:hover
+                        text-decoration: underline
+                    span
+                        font-size: 12px
+                        color: gray
+    .contendor-final
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 10px 0px 30px
+        ul
+            display: flex
+            justify-content: space-around
+            li
+                padding: 5px 9px
+                img
+                    width: 30px
+                    height: 30px
+                    margin-top: -5px
+                a
+                    color: white
+                    font-size: 12px
+        span
+            color: white
+            font-size: 12px   
